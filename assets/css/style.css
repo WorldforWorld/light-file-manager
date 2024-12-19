@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+h1 {
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-all;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.item-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+.item-link {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.item-link:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.text-primary {
+  color: #007bff;
+}
+.button {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: calc(100% - 120px);
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #0056b3;
+}
+
+.fa-arrow-left {
+  margin-right: auto;
+  display: flex;
+  width: fit-content;
+}
+.icon i {
+  font-size: 20px;
+}
+.icon .fa-folder {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-folder {
+  color: #f4c542; /* Желтый для папок */
+}
+
+.fa-file-image {
+  color: #28a745; /* Зеленый для изображений */
+}
+
+.fa-file-pdf {
+  color: #dc3545; /* Красный для PDF */
+}
+
+.fa-file-word {
+  color: #007bff; /* Синий для Word */
+}
+
+.fa-file-excel {
+  color: #28a745; /* Зеленый для Excel */
+}
+
+.fa-file-alt {
+  color: #6c757d; /* Серый для текстовых файлов */
+}
+
+.fa-file-archive {
+  color: #fd7e14; /* Оранжевый для архивов */
+}
+
+.fa-file-audio {
+  color: #ffc107; /* Золотой для аудио */
+}
+
+.fa-file-video {
+  color: #6610f2; /* Фиолетовый для видео */
+}
+
+.fa-file {
+  color: #6c757d; /* Серый по умолчанию */
+}
+/* Общий стиль для кнопок */
+.download-link,
+.delete-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  white-space: nowrap; /* Запрет переноса текста */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Обрезка текста с добавлением "..." */
+}
+.buttons {
+  display: flex;
+}
+/* Скрываем текст при ширине экрана 767px */
+@media (max-width: 767px) {
+  .download-link span,
+  .delete-button span {
+    display: none;
+  }
+}
+/* Стиль иконок */
+.download-link i,
+.delete-button i {
+  font-size: 16px;
+}
+.breadcrumbs {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  background: #d2d2d2;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.pagination .button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 3px;
+  color: #007bff;
+  background: #f1f1f1;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.pagination .button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.pagination .button.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  pointer-events: none; /* Отключаем кликабельность на текущей странице */
+}
