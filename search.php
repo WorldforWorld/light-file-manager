@@ -16,6 +16,7 @@ function searchFiles($directory, $searchTerm) {
             $results = array_merge($results, searchFiles($filePath, $searchTerm));
         }
     }
+    
 
     return $results;
 }
